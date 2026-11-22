@@ -82,7 +82,7 @@ class MorphBottomNavigationView : BottomNavigationView, OnNavigationItemSelected
     val a = resources.obtainAttributes(attrs, R.styleable.MorphBottomNavigationView)
 
     val typedValue = TypedValue()
-    context.theme?.resolveAttribute(R.attr.colorPrimary, typedValue, true)
+    context.theme?.resolveAttribute(androidx.appcompat.R.attr.colorPrimary, typedValue, true)
     val backgroundTint = a.getColor(R.styleable.MorphBottomNavigationView_backgroundTint, typedValue.data)
 
     val morphItemRadius = a.getDimensionPixelSize(R.styleable.MorphBottomNavigationView_morphItemRadius, dpToPx(64f).toInt()).toFloat()

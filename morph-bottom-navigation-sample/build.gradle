@@ -5,11 +5,12 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-  compileSdkVersion 28
+    namespace 'com.tbuonomo.morphbottomnavigation'
+    compileSdk 34
   defaultConfig {
     applicationId "com.tbuonomo.morphbottomnavigation"
-    minSdkVersion 19
-    targetSdkVersion 28
+    minSdk 19
+    targetSdk 34
     versionCode 1
     versionName "1.0"
     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -19,6 +20,7 @@ android {
       minifyEnabled false
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }
+    
   }
 }
 
@@ -34,3 +36,7 @@ dependencies {
   implementation project(':morph-bottom-navigation')
 //  implementation 'com.tbuonomo:morph-bottom-navigation:1.0.1'
 }
+
+
+
+
